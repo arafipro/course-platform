@@ -68,3 +68,21 @@ node_modules
 # 3 create backend
 
 `npm create hono@latest apps/backend`
+
+# 4 add shadcn/ui
+
+`cd apps/frontend`
+
+`npx shadcn@latest init`
+
+```sh
+Which style would you like to use? › Default
+Which color would you like to use as the base color? › Neutral
+How would you like to proceed? › Use --legacy-peer-deps
+```
+
+`npx shadcn@latest add button`
+
+```sh
+How would you like to proceed? › Use --legacy-peer-deps
+```
