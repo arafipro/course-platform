@@ -52,5 +52,15 @@ node_modules
   }
 ```
 
+# 2 create frontend
+
 `mkdir apps`
 
+`npm create cloudflare@latest apps/frontend`
+
+`npm run dev`
+
+```diff .gitignore
+  node_modules
++ .turbo	
+```
