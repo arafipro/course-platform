@@ -64,3 +64,7 @@ node_modules
   node_modules
 + .turbo	
 ```
+
+# 3 create backend
+
+`npm create hono@latest apps/backend`
