@@ -58,6 +58,20 @@ node_modules
 
 `npm create cloudflare@latest apps/frontend`
 
+```sh
+Would you like to use TypeScript? … Yes
+Would you like to use ESLint? … Yes
+Would you like to use Tailwind CSS? … Yes
+Would you like your code inside a `src/` directory? … No
+Would you like to use App Router? (recommended) … Yes
+Would you like to use Turbopack for `next dev`? … Yes
+Would you like to customize the import alias (`@/*` by default)? … No
+
+Do you want to use git for version control? yes git
+
+Do you want to deploy your application? no
+```
+
 `npm run dev`
 
 ```diff .gitignore
@@ -68,6 +82,12 @@ node_modules
 # 3 create backend
 
 `npm create hono@latest apps/backend`
+
+```sh
+Which template do you want to use? cloudflare-workers
+Do you want to install project dependencies? yes
+Which package manager do you want to use? npm
+```
 
 # 4 add shadcn/ui
 
