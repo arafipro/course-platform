@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-test",
+  "name": "monorepo-base",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,10 +8,10 @@
     "build": "turbo run build",
     "lint": "turbo run lint"
   },
-	"packageManager": "npm@10.1.0",
-	"workspaces": [
-		"apps/*"
-	],
+  "packageManager": "npm@10.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

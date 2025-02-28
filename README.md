@@ -1,8 +1,8 @@
-`mkdir monorepo-test`
+`mkdir monorepo-base`
 
 `git init`
 
-`cd monorepo-test/`
+`cd monorepo-base/`
 
 `npm init -y`
 
@@ -29,7 +29,7 @@ node_modules
 
 ```diff json package.json
   {
-    "name": "monorepo-test",
+    "name": "monorepo-base",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -76,7 +76,7 @@ Do you want to deploy your application? no
 
 ```diff .gitignore
   node_modules
-+ .turbo	
++ .turbo
 ```
 
 # 3 create backend
