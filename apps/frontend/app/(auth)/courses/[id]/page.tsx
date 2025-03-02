@@ -1,6 +1,7 @@
 import { Skeleton } from "@/components/ui/skeleton";
-import VideoPlayer from "@/components/video-player";
+import VideoPlayer from "@/app/(auth)/courses/[id]/_components/video-player";
 import { Suspense } from "react";
+import { PurchaseButton } from "./_components/purchase-button";
 
 // APIからコース情報を取得する関数
 async function fetchCourse(id: string) {
@@ -27,9 +28,6 @@ function CourseVideo({ videoId }: { videoId: string }) {
     </div>
   );
 }
-
-// 購入ボタンをクライアントコンポーネントとして分離
-import { PurchaseButton } from "./purchase-button";
 
 export default async function CoursePage({
   params,

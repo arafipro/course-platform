@@ -1,5 +1,5 @@
-import { CourseCard } from "@/components/course-card";
-import { SearchBar } from "@/components/search-bar";
+import { CourseCard } from "@/app/(main)/_components/course-card";
+import { SearchBar } from "@/app/(main)/_components/search-bar";
 import { Button } from "@/components/ui/button";
 import { fetchCourses } from "@/lib/api";
 import Image from "next/image";
