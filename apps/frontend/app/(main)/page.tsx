@@ -1,9 +1,10 @@
-import { CourseCard } from "@/app/(main)/_components/course-card";
 import { Button } from "@/components/ui/button";
 import { fetchCourses } from "@/lib/api";
 import Link from "next/link";
+import { CourseCard } from "../_components/course-card";
 import Footer from "../_components/footer";
 import Header from "../_components/header";
+import Hero from "./_components/hero";
 
 export default async function Home() {
   const courses = await fetchCourses(6); // Server Componentでデータフェッチ
@@ -12,25 +13,7 @@ export default async function Home() {
     <div className="min-h-screen bg-gray-50">
       <Header />
       <main className="container mx-auto px-4 py-8">
-        {/* ヒーローセクション */}
-        <section className="mb-12 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-700 p-8 text-white">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl">
-              あなたのスキルを次のレベルへ
-            </h1>
-            <p className="mb-6 text-lg opacity-90">
-              最高の講師陣による厳選されたコースで、新しいスキルを習得しましょう
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-white text-blue-700 hover:bg-gray-100"
-            >
-              <Link href="/courses">すべてのコースを見る</Link>
-            </Button>
-          </div>
-        </section>
-
+        <Hero />
         {/* コース一覧セクション */}
         <section>
           <div className="mb-6 flex items-center justify-between">

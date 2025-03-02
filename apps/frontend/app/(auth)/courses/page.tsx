@@ -1,4 +1,4 @@
-import { CourseCard } from "@/app/(main)/_components/course-card";
+import { CourseCard } from "@/app/_components/course-card";
 import Footer from "@/app/_components/footer";
 import Header from "@/app/_components/header";
 import { fetchCourses } from "@/lib/api";
