@@ -16,6 +16,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "drizzle-kit": "^0.30.5",
     "turbo": "^2.4.4"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.40.0"
   }
 }
